@@ -1,0 +1,29 @@
+***MAILROOM MADNESS PSEUDO CODE***
+
+create 5 default donors with unique names
+    1 - 3 donations each
+display welcome message
+display choices to send thank you or create report
+create condition so that if wrong input user is taken back to beginning
+if user choose to send thank you:
+    prompt for full name
+    give option to user to view list of donors and then display a prompt again to return to menu
+    read file to see if user exists using full name
+    if new user append data for donation amount and use full name
+        validate the amount is numerical and prompt for valid number if not
+        display transaction details to user
+        append the new donation
+        display thank you using string formatting to compose email message displayed in terminal
+    return user back to main menu
+    if user exists then display data
+        prompt existing user for donation amount
+        validate the amount is numerical and prompt for valid number if not
+        display transaction details to user after donation
+        display thank you using string formatting to compose email message displayed in terminal
+    return user back to main menu or exit give choice
+if user chooses report: (using string formatting use tabular)
+    display a list of donors sorted by total donation amounts
+        display donor name, total donated, number of donations and average donation amount all in new rows
+    return to main menu
+
+user should be able to quit at any time
